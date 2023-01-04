@@ -20,26 +20,6 @@ void print(T&&... args) {
 
 //==============================================================================================
 
-deque<string> angka;
-
-void pushback(string x){
-    angka.push_back(x);
-}
-
-void pushfront(string x){
-    angka.push_front(x);
-}
-
-void popback(){
-    angka.pop_back();
-}
-
-void popfront(){
-    angka.pop_front();
-}
-
-//==============================================================================================
-
 signed main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
@@ -52,17 +32,17 @@ signed main()
         input(command);
         if(command=="push_back"){
             input(num);
-            pushback(num);
+            angka.push_back(x);
         }
         if(command=="push_front"){
             input(num);
-            pushfront(num);
+            angka.push_front(x);
         }
         if(command=="pop_front"){
-            popfront();
+            angka.pop_front();
         }
         if(command=="pop_back"){
-            popback();
+            angka.pop_back();
         }
         
     }
