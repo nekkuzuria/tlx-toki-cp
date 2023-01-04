@@ -23,6 +23,8 @@ void print(T&&... args) {
 signed main()
 {
     ios_base::sync_with_stdio(false); cin.tie(NULL);
+    deque<string> angka;
+    
     
     int n;
     input(n);
@@ -32,11 +34,11 @@ signed main()
         input(command);
         if(command=="push_back"){
             input(num);
-            angka.push_back(x);
+            angka.push_back(num);
         }
         if(command=="push_front"){
             input(num);
-            angka.push_front(x);
+            angka.push_front(num);
         }
         if(command=="pop_front"){
             angka.pop_front();
@@ -54,4 +56,3 @@ signed main()
 
     return 0;
 }
-
