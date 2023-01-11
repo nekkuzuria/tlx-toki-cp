@@ -56,4 +56,4 @@ signed main()
 
 
 
-
+//salah di bagian inisialisasi nilai timenow, kureng kecil
